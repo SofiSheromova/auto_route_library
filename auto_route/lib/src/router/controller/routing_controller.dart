@@ -917,7 +917,8 @@ abstract class StackRouter extends RoutingController {
           }
           break;
         } else {
-          _removeTopRouterOf(candidate.routeKey);
+          // fixes navigation by nested urls
+          // _removeTopRouterOf(candidate.routeKey);
         }
       }
     }
